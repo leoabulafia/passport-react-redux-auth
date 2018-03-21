@@ -10,6 +10,9 @@ const bodyParser = require('body-parser');
 //this is the mongoose User model
 require('./models/User');
 
+//require passport strategies, serialize & deserialize
+require('./services/passport');
+
 //connect to mongodb
 mongoose.connect(keys.mongoURI);
 
@@ -30,9 +33,6 @@ app.use(passport.session());
 
 //require routes
 require('./routes/auth')(app);
-
-//require passport strategies, serialize & deserialize
-require('./services/passport');
 
 //Express in production!
 //order of operations is important
