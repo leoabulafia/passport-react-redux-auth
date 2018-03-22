@@ -1,40 +1,37 @@
 body {
-  margin: 0;
+	margin: 0;
 }
 
 a {
-  text-decoration: none;
-  color: #fff;
+	text-decoration: none;
+	color: #fff;
 }
 
 .container {
-  background: #eeeeee;
-  align-items: center;
-  z-index: 0;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Roboto', sans-serif;
-  min-height: 100vh;
-  letter-spacing: 0.08em;
-  line-height: 1.7em;
-  padding: 3rem 1rem;
+	align-items: center;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0.08em;
+	line-height: 1.7em;
+	padding: 1.8rem 1rem;
 }
 
 /*scrollbar*/
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+	width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track:vertical {
-  background: #d6dad6;
-  border-radius: 10px;
+	background: #d6dad6;
+	border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb:vertical {
-  background: #c4c9cc;
-  border-radius: 10px;
+	background: #c4c9cc;
+	border-radius: 10px;
 }

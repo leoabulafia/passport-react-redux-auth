@@ -1,20 +1,22 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 //material-ui
-import { withStyles } from 'material-ui/styles';
+import { withStyles } from "material-ui/styles";
 //style components
-import AppBar from 'material-ui/AppBar';
-import Button from 'material-ui/Button';
-import Hidden from 'material-ui/Hidden';
-import Toolbar from 'material-ui/Toolbar';
-import Typography from 'material-ui/Typography';
+import AppBar from "material-ui/AppBar";
+import Button from "material-ui/Button";
+import Hidden from "material-ui/Hidden";
+import IconButton from "material-ui/IconButton";
+import Toolbar from "material-ui/Toolbar";
+import Typography from "material-ui/Typography";
+import GithubCircle from "mdi-material-ui/GithubCircle";
 //components
-import MobileMenu from './MobileMenu';
+import MobileMenu from "./MobileMenu";
 
 const styles = {
   root: {
-    width: '100%'
+    width: "100%"
   },
   flex: {
     flex: 1
@@ -71,6 +73,15 @@ class Header extends Component {
                 React + PassportJS Authentication
               </Typography>
               {this.renderContent()}
+              <IconButton>
+                <a
+                  href="https://github.com/leoabulafia/multilingual-react"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GithubCircle />
+                </a>
+              </IconButton>
             </Hidden>
           </Toolbar>
         </AppBar>

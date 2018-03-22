@@ -1,19 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 //components
-import ButtonGoogle from './ButtonGoogle';
-import ButtonFacebook from './ButtonFacebook';
-import LocalLogin from './LocalLogin';
-import PaperContainer from './utilities/PaperContainer';
+import ButtonGoogle from "./ButtonGoogle";
+import ButtonFacebook from "./ButtonFacebook";
+import LocalLogin from "./LocalLogin";
+import PaperContainer from "./utilities/PaperContainer";
 //styles
-import Divider from 'material-ui/Divider';
-import Typography from 'material-ui/Typography';
+import Divider from "material-ui/Divider";
+import Typography from "material-ui/Typography";
 
 export default props => (
   <PaperContainer>
     <ButtonGoogle buttonDescription="continue with google" />
     <ButtonFacebook buttonDescription="continue with facebook" />
-    <Divider style={{ margin: '2em 0' }} />
+    <Divider style={{ margin: "1em 0" }} />
     <Typography variant="subheading" align="center">
       or
     </Typography>
@@ -24,9 +24,9 @@ export default props => (
     <Link to="/forgotpassword">
       <Typography
         style={{
-          paddingLeft: '16px',
-          textDecoration: 'underline',
-          marginTop: '15px'
+          paddingLeft: "16px",
+          textDecoration: "underline",
+          marginTop: "15px"
         }}
         variant="subheading"
       >
