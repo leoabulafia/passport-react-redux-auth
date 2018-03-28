@@ -73,13 +73,17 @@ const LandingCards = props => {
 								style={{ marginBottom: '10px' }}>
 								This is an example of using React and Redux alongside PassportJS
 								for authentication. All the routing is handled by React Router.
+								It uses MongoDB and Mongoose to store data and object modeling.
+								Sendgrid{"'"}s Node.js library manages email sending.
 							</Typography>
 							<Typography
 								color="inherit"
 								component="p"
 								style={{ marginBottom: '10px' }}>
-								This demo uses MongoDB and Mongoose to store data and object
-								modeling. Sendgrid{"'"}s Node.js library manages email sending.
+								It is strongly focused on authentication with email & password,
+								with email management for confirmation and account restoring,
+								validation and warnings in every form. Google and Facebook are
+								also available as auth methods.
 							</Typography>
 							<Typography
 								color="inherit"

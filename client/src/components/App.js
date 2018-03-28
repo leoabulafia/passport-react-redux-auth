@@ -41,7 +41,7 @@ class App extends Component {
 						path="/recoveryemailsent"
 						component={RecoveryEmailSent}
 					/>
-					<Route exact path="/resetpassword" component={ResetPassword} />
+					<Route exact path="/resetpassword/:token" component={ResetPassword} />
 					<Route exact path="/emailconfirmed" component={EmailConfirmed} />
 					<PrivateRoute exact path="/confirmemail" component={ConfirmEmail} />
 					<PrivateRoute exact path="/dashboard" component={DashboardMain} />
@@ -53,8 +53,4 @@ class App extends Component {
 	}
 }
 
-const mapStateToProps = ({ auth }) => {
-	return { auth };
-};
-
-export default connect(mapStateToProps, { fetchUser })(App);
+export default connect(null, { fetchUser })(App);

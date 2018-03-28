@@ -4,8 +4,9 @@ import Typography from 'material-ui/Typography';
 
 export default props => (
 	<DashboardDrawer>
-		<Typography noWrap>
-			{'Welcome to the Dashboard. Check your profile!'}
+		<Typography variant="headline">Welcome to the Dashboard.</Typography>
+		<Typography variant="subheading">
+			Check your profile, settings, or visit the github repository.
 		</Typography>
 	</DashboardDrawer>
 );

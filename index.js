@@ -21,10 +21,10 @@ app.use(bodyParser.json());
 
 //set cookies
 app.use(
-  cookieSession({
-    maxAge: 30 * 24 * 60 * 60 * 1000,
-    keys: [keys.cookieKey]
-  })
+	cookieSession({
+		maxAge: 30 * 24 * 60 * 60 * 1000,
+		keys: [keys.cookieKey]
+	})
 );
 
 //initialize passport
@@ -33,17 +33,18 @@ app.use(passport.session());
 
 //require routes
 require('./routes/auth')(app);
+require('./routes/mails')(app);
 
 //Express in production!
 //order of operations is important
 if (process.env.NODE_ENV === 'production') {
-  //First, if any request comes and it isn't handled by Express,
-  //look out for /client/build
-  app.use(express.static('client/build'));
-  //Second, if don't know what route is just serve index.html
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-  });
+	//First, if any request comes and it isn't handled by Express,
+	//look out for /client/build
+	app.use(express.static('client/build'));
+	//Second, if don't know what route is just serve index.html
+	app.get('*', (req, res) => {
+		res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+	});
 }
 
 const PORT = process.env.PORT || 5000;
