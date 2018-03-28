@@ -33,7 +33,7 @@ export default () => (
 			<ListItem
 				button
 				component="a"
-				href="https://github.com/leoabulafia/multilingual-react"
+				href="https://github.com/leoabulafia/passport-react-redux-auth"
 				target="_blank"
 				rel="noopener noreferrer">
 				<ListItemIcon>
